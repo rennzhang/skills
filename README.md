@@ -27,6 +27,12 @@ Competitive multi-team proposal review. Three differentiated teams produce indep
 - Team 2: User experience maximalist
 - Team 3: Minimalist & disruptive
 
+### doubao-exporter
+
+Export Doubao public share threads (`doubao.com/thread/...`) to Markdown with optional image download.
+
+**Core workflow**: Fetch SSR HTML via HTTP → Parse `data-fn-args` JSON → Extract messages/images → Filter empty messages by default → Generate Markdown output
+
 ## Installation
 
 Copy any skill folder into your `~/.claude/skills/` directory:
@@ -35,6 +41,7 @@ Copy any skill folder into your `~/.claude/skills/` directory:
 cp -r skills/doc-reviewer ~/.claude/skills/
 cp -r skills/skill-reflection ~/.claude/skills/
 cp -r skills/team-compete ~/.claude/skills/
+cp -r skills/doubao-exporter ~/.claude/skills/
 ```
 
 ## License
